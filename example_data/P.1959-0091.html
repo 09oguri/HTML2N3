@@ -1,0 +1,931 @@
+
+
+
+
+<html>
+<head>
+	
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>所蔵作品検索｜国立西洋美術館</title>
+    <!-- InstanceEndEditable -->
+    <!-- InstanceParam name="bodyId" type="text" value="collection" -->
+    <!-- InstanceParam name="bodyClass" type="text" value="permanent" -->
+    <link href="../artize/css/nmwa.css" rel="stylesheet" type="text/css" media="all" />
+
+    <script id="js" type="text/javascript" src="../artize/js/script.js" charset="UTF-8"></script>
+	<script id="js" type="text/javascript" src="../artize/js/search_1_top.js" charset="Shift_JIS"></script>
+	<script id="js" type="text/javascript" src="../artize/js/sendPost.js" charset="Shift_JIS"></script>
+	<!-- ThickBox 3 -->
+	<script type="text/javascript" src="../artize/thickbox/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../artize/thickbox/thickbox.js"></script>
+	<script type="text/javascript">
+ 		var TB_image_path = '../artize/thickbox/images/';
+	</script>
+	<link href="../artize/thickbox/thickbox.css" rel="stylesheet" type="text/css" />
+	<!-- /ThickBox 3 -->
+    
+    <meta name="copyright" content="NMWA" />
+    <meta name="Description" xml:lang="ja" lang="ja" content="国立西洋美術館の所蔵作品データベースです。絵画、素描、版画、彫刻、工芸、書籍などを総合的に検索できます。" />
+    <meta name="Description" xml:lang="en" lang="en" content="" />
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+
+</head>
+<body id="collection" class="permanent">
+    <div id="container">
+        <div id="header">
+			
+
+
+
+<h1>
+    <a href="http://www.nmwa.go.jp/jp/index.html">
+        <img src="../artize/img/title.gif" alt="国立西洋美術館 The National Museum of Western Art" /></a></h1>
+<ul>
+    <li class="item01"><a href="http://www.nmwa.go.jp/jp/information/sitemap.html">サイトマップ</a></li>
+    <li class="item02"><a href="http://www.nmwa.go.jp/en/">English</a></li>
+</ul>
+<form action="http://www.nmwa.go.jp/cgi-bin/search/search.cgi" method="post">
+    <div id="searchArea">
+        <input type="text" name="WORD" class="wordInput" value="" />
+        <input type="image" src="../artize/img/bt_search.gif" alt="検索" name="btSearch" class="btSearch" />
+    </div>
+</form>
+
+        </div>
+        <div id="content">
+            <ul id="navGlobal">
+				
+
+
+
+
+                <li class="item01" onmouseout="navOff('01');" onmouseover="navOn('01');"><a href="http://www.nmwa.go.jp/jp/visit/index.html">
+                    ご利用案内</a>
+                    <ul id="submenu01">
+                        <li><a href="http://www.nmwa.go.jp/jp/visit/index.html">
+                            <img src="../artize/img/submenu01_01.gif" alt="ご利用案内" class="rollover" /></a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/visit/map.html">
+                            <img src="../artize/img/submenu01_02.gif" alt="交通案内" class="rollover" /></a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/visit/calendar.html">
+                            <img src="../artize/img/submenu01_06.gif" alt="カレンダー" class="rollover" /></a></li>    
+                        <li><a href="http://www.nmwa.go.jp/jp/visit/floorplans.html">
+                            <img src="../artize/img/submenu01_03.gif" alt="館内地図" class="rollover" /></a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/visit/faqs.html">
+                            <img src="../artize/img/submenu01_05.gif" alt="FAQ" class="rollover" /></a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/visit/contact.html">
+                            <img src="../artize/img/submenu01_04.gif" alt="お問い合わせ" class="rollover" /></a></li>
+                    </ul>
+                </li>
+                <li class="item02" onmouseover="navOn('02');" onmouseout="navOff('02');"><a href="http://www.nmwa.go.jp/jp/exhibitions/current.html">
+                    展覧会</a>
+                    <ul id="submenu02">
+                        <li><a href="http://www.nmwa.go.jp/jp/exhibitions/current.html">
+                            <img src="../artize/img/submenu02_01.gif" alt="開催中の展覧会" class="rollover" /></a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/exhibitions/upcoming.html">
+                            <img src="../artize/img/submenu02_03.gif" alt="今後の展覧会予定" class="rollover" /></a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/exhibitions/past/index.html">
+                            <img src="../artize/img/submenu02_04.gif" alt="過去の展覧会" class="rollover" /></a></li>
+                    </ul>
+                </li>
+                <li class="item03" onmouseover="navOn('03');" onmouseout="navOff('03');"><a href="/artizeweb/search_5_area.do">所蔵作品</a>
+                    <ul id="submenu03">
+                        <li><a href="/artizeweb/search_5_area.do"><img src="../artize/img/submenu02_02.gif" alt="常設展" class="rollover" /></a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/collection/introduction.html">
+                            <img src="../artize/img/submenu03_01.gif" alt="作品紹介" class="rollover" /></a></li>
+                        <li><a href="/artizeweb/index.jsp"><img src="../artize/img/submenu03_02.gif" alt="作品検索" class="rollover" /></a></li>
+                        <!-- li class="doublelines"><a href="#"><img src="../artize/img/submenu03_03.gif" alt="作品画像の利用について" class="rollover" /></a></li -->
+                        <li><a href="http://www.nmwa.go.jp/jp/collection/index.html"><img src="../artize/img/submenu03_04.gif" alt="総索引" class="rollover" /></a></li>
+                    </ul>
+                </li>
+                <li class="item04" onmouseover="navOn('04');" onmouseout="navOff('04');"><a href="http://www.nmwa.go.jp/jp/events/index.html">
+                    イベント</a>
+                    <ul id="submenu04">
+                        <li><a href="http://www.nmwa.go.jp/jp/events/index.html">
+                            <img src="../artize/img/submenu04_01.gif" alt="講演会／シンポジウム" class="rollover" />
+                        </a></li>
+                        <li class="doublelines"><a href="http://www.nmwa.go.jp/jp/events/talk.html">
+                            <img src="../artize/img/submenu04_02.gif" alt="ギャラリートーク／スライドトーク" class="rollover" />
+                        </a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/events/talkandtour.html">
+                            <img src="../artize/img/submenu04_10.gif" alt="美術トーク／建築ツアー" class="rollover" />
+                        </a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/events/family.html">
+                            <img src="../artize/img/submenu04_03.gif" alt="ファミリープログラム" class="rollover" />
+                        </a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/events/concert.html">
+                            <img src="../artize/img/submenu04_05.gif" alt="コンサート" class="rollover" /></a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/events/fun-day.html">
+                            <img src="../artize/img/submenu04_06.gif" alt="ファン・デー" class="rollover" /></a></li>
+                        <li class="doublelines"><a href="http://www.nmwa.go.jp/jp/events/fun-with-collection.html">
+                            <img src="../artize/img/submenu04_07.gif" alt="ファン・ウィズ・コレクション" class="rollover" /></a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/events/christmas-program.html">
+                            <img src="../artize/img/submenu04_09.gif" alt="美術館でクリスマス" class="rollover" /></a></li>
+                    </ul>
+                </li>
+                <li class="item05" onmouseover="navOn('05');" onmouseout="navOff('05');"><a href="http://www.nmwa.go.jp/jp/education/index.html">
+                    教育／研究</a>
+                    <ul id="submenu05">
+                        <li><a href="http://www.nmwa.go.jp/jp/education/index.html">
+                            <img src="../artize/img/submenu05_01.gif" alt="教育プログラム" class="rollover" /></a> </li>
+                        <li><a href="http://www.nmwa.go.jp/jp/education/library.html">
+                            <img src="../artize/img/submenu05_05.gif" alt="研究資料センター" class="rollover" /></a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/education/prints-drawings.html">
+                            <img src="../artize/img/submenu05_08.gif" alt="版画素描閲覧室" class="rollover" />
+                        </a></li>
+                        <!-- li class="doublelines"><a href="#"><img src="../artize/img/submenu05_09.gif" alt="作品画像の利用について" class="rollover" /></a></li -->
+                        <li><a href="http://www.nmwa.go.jp/jp/education/publication.html">
+                            <img src="../artize/img/submenu05_10.gif" alt="出版物" class="rollover" /></a></li>
+                    </ul>
+                </li>
+                <li class="item06" onmouseover="navOn('06');" onmouseout="navOff('06');"><a href="http://www.nmwa.go.jp/jp/about/index.html">
+                    当館について</a>
+                    <ul id="submenu06">
+                        <!-- li><a href="http://www.nmwa.go.jp/jp/collection"../artize/img/submenu06_01.gif" alt="館長あいさつ" class="rollover" /></a></li -->
+                        <li><a href="http://www.nmwa.go.jp/jp/about/index.html">
+                            <img src="../artize/img/submenu06_02.gif" alt="美術館概要" class="rollover" />
+                        </a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/about/history.html">
+                            <img src="../artize/img/submenu06_03.gif" alt="美術館の歴史" class="rollover" /></a></li>                        <li><a href="http://www.nmwa.go.jp/jp/about/matsukata.html">
+                            <img src="../artize/img/submenu06_05.gif" alt="松方コレクション" class="rollover" /></a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/about/building.html">
+                            <img src="../artize/img/submenu06_04.gif" alt="美術館の建物" class="rollover" /></a></li>
+                    </ul>
+                </li>
+                <li class="item07" onmouseover="navOn('07');" onmouseout="navOff('07');"><a href="http://www.nmwa.go.jp/jp/shop-cafe/index.html">
+                    ショップ／レストラン</a>
+                    <ul id="submenu07">
+                        <li><a href="http://www.nmwa.go.jp/jp/shop-cafe/index.html">
+                            <img src="../artize/img/submenu07_01.gif" alt="ミュージアムショップ" class="rollover" /></a></li>
+                        <li><a href="http://www.nmwa.go.jp/jp/shop-cafe/cafe.html">
+                            <img src="../artize/img/submenu07_02.gif" alt="レストラン" class="rollover" /></a></li>
+                    </ul>
+                </li>
+                <li class="item08"><a href="http://www.nmwa.go.jp/jp/index.html">トップページ</a></li>
+
+
+            </ul>
+            <hr />
+            <div id="main">
+				
+
+
+
+
+
+<form name="searchForm" method="post" action="/artizeweb/search_7_detail.do">
+	<input type="hidden" name="detail.otherPictureView" value="false"><input type="hidden" name="detail.vi" value="1"><input type="hidden" name="detail.picIndex" value="-1"><input type="hidden" name="detail.picFlg" value=""><input type="hidden" name="type" value="3"><input type="hidden" name="area.si" value="1"><input type="hidden" name="detail.largePictureView" value="false"><input type="hidden" name="area.location" value="12"><input type="hidden" name="area.vi" value="1"><input type="hidden" name="detail.artCd" value="91">
+	<input type="hidden" name="artistArt.artistCd">
+</form>
+<p id="topicPath">
+	<a href="http://www.nmwa.go.jp/jp/index.html">トップページ</a> &raquo;
+	<a href="/artizeweb/search_5_area.do">所蔵作品</a> &raquo;
+	
+	
+	
+	
+		<a href="javascript:doSendPostChangedAction('/artizeweb/search_5_area.do');">常設展</a> &raquo;
+       	<a href="javascript:doSendPostChangedAction('/artizeweb/search_6_areaart.do');">検索結果</a> &raquo;
+	
+    作品詳細</p>
+	<h2><img src="../artize/img/kensakuku_14.gif" alt="作品詳細" width="93" height="44" /></h2>
+	
+	<div id="mainClm">
+    	<div style="padding-top: 3px; padding-bottom: 3px; border-bottom: 1px solid #adadad;border-top: 1px solid #adadad; height: 20px;">
+        	<div style="width: 240px; float: left; padding-top: 2px">
+            	<p>
+	            	1
+	                /
+	                19
+                </p>
+	        </div>
+    	    <div style="width: 230px; float: left; padding-top: 5px;">
+        	    <p>
+            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            		
+            			<img src="../artize/img/kensakuku_yajirusi_r.gif"/>&nbsp;
+            			<a style="color: #92483f;" href="javascript:doSendPostChangedAction('/artizeweb/search_7_detail.do','detail.artCd','345','detail.vi','-1','detail.picIndex','-1','type','3');">次の作品</a>
+	                
+    	        </p>
+        	</div>
+        	<div style="width: 100px; float: left; padding-top: 2px;">
+            	<p>
+					
+					
+					
+						<a style="color: #92483f;" href="javascript:doSendPostChangedAction('/artizeweb/search_6_areaart.do','type','3');">検索結果にもどる</a>
+					
+	            </p>
+    	    </div>
+    	</div>
+    	
+	  	
+    		
+    		
+    	
+    	<div style="width: 570px; float: left; padding-top: 7px; padding-bottom: 7px;">
+    		<table cellpadding="0" cellspacing="0" border="0" width="570" height="22">
+    			<tr>
+    				<td align="right">
+    					<table cellpadding="0" cellspacing="0" border="0">
+    						<tr>
+    							
+	    							<td nowrap><a href="../artize/mm/0000910001MM.jpg" class="thickbox"  title="国立西洋美術館" id="target_effect_fade"><img src="../artize/img/link_large.gif"></a>&nbsp;&nbsp;</td>
+									<td nowrap><a style="color: #92483f; font-size : 11px; vertical-align : bottom;" href="../artize/mm/0000910001MM.jpg" id="enlarge_image" class="thickbox" title="国立西洋美術館" name="" >拡大</a>&nbsp;&nbsp;&nbsp;</td>
+									<td nowrap><a style="color: #92483f;" href="javascript:thumbnailChange();"><img src="../artize/img/link_zoom.gif"></a>&nbsp;&nbsp;</td>
+									<td nowrap><a style="color: #92483f; font-size : 11px; vertical-align : bottom;" href="javascript:thumbnailChange();">ズーム</a>&nbsp;&nbsp;</td>
+    							
+    								
+    							<td nowrap><a href="http://collection.nmwa.go.jp/P.1959-0091.html"><img src="../artize/img/link_icon.gif"></a>&nbsp;&nbsp;</td>
+    							<td nowrap><a style="color: #92483f; font-size : 11px; vertical-align : bottom;" href="http://collection.nmwa.go.jp/P.1959-0091.html">パーマリンク</a>&nbsp;&nbsp;&nbsp;</td>
+    							<td nowrap><a style="color: #92483f;" href="javascript:doSendPostChangedActionBlank('/artizeweb/search_7_detail.do','detail.artCd','91','type','6','detail.picFlg','false');"><img src="../artize/img/pri.gif"></a>&nbsp;&nbsp;</td>
+    							<td nowrap><a style="color: #92483f; font-size : 11px; vertical-align : bottom;" href="javascript:doSendPostChangedActionBlank('/artizeweb/search_7_detail.do','detail.artCd','91','type','6','detail.picFlg','false');">印刷</a>&nbsp;&nbsp;</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr>
+    		</table>
+    	</div>
+    	<!--[A]のブロックはじまり-->
+<!-- No.9 サムネイル START-->
+    	
+			<!--サムネイル大 START-->
+			<div id="thumbLL" style="display:none;">
+				<div style="clear:left; background-color:#f0f0f0; border: 1px solid #adadad;width: 568px;height: 346px">
+					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="568" height="346" id="picview" align="middle">
+				      <param name="allowScriptAccess" value="sameDomain"/>
+				      <param name="movie" value="../artize/picview.swf?imagesDir=../artize/ll/&p=0000910001" />
+				      <param name="quality" value="high" />
+				      <param name="bgcolor" value="#efefef" />
+				      <embed src="../artize/picview.swf?imagesDir=../artize/ll/&p=0000910001" quality="high" bgcolor="#efefef" width="568" height="346" name="picview" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+				    </object>					
+				</div>
+				
+					<div style="clear:left; height:10px;">
+						<p></p>
+					</div>
+        		
+			</div>
+			<!--サムネイル大 END-->
+			<!--サムネイル中 START-->
+			<div style="width:260px; float:left;">
+				<div id="thumbL" style="display:;">
+					<a href="javascript:thumbnailChange();">
+						<img src="../artize/l/0000910001L.jpg" border="0" />
+					</a>
+					
+						<p></p>
+					
+				</div>
+		
+		
+		<!--サムネイル中 END-->
+<!-- No.9 サムネイル END-->
+        <!--[A]のブロックおわり-->
+        <!--[B]のブロックはじまり-->
+		<!-- No.13 展示中情報 START-->
+			
+			
+			
+				
+			
+			
+			
+		    
+				<!-- 2008/07/16 add refercd=14,15,16,20 -->
+				
+				
+				
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				
+					<div style="padding-top: 10px; width: 58px; float: left; height: 30px;">
+						<img src="../artize/img/tenji.gif" width="58" height="17" />
+					</div>
+					<div style="padding-top: 10px; width: 202px; height: 30px; float: left;">
+						<p>
+							
+								&nbsp;&nbsp;<a href="/artizeweb/search_6_areaart.do?area.location=12" style="color:#92483f;">常設展</a>
+							
+						</p>
+					</div>
+				
+				
+	        
+	        
+			<!-- No.13 展示中情報 END-->
+			<!-- No.14 サムネイル画像 START-->
+			
+	  		
+    	</div>
+    <!--[B]のブロックおわり-->
+    <div style="width: 20px; float: left;"></div>
+    <!--[C]のブロックはじまり-->
+    <div style="width: 290px; float:right;">
+    	
+    		<!-- 2007/12/13update -->
+    		<a href="javascript:doSendPostChangedAction('/artizeweb/search_3_artistart.do','artistArt.artistCd','68');">
+            <div>
+                <p style="font-size: 14px;">
+                	エミール=オーギュスト・カロリュス=デュラン
+                	
+				</p>
+            </div>
+            <div style="padding-bottom: 10px;">
+                <p>
+                    	リール,&nbsp;1838年
+                		-
+                    	パリ,&nbsp;1917年
+                	</p>
+            </div>
+            </a>
+        
+        
+            <div>
+                <p style="font-size: 14px;">
+                	Émile-Auguste Carolus-Duran
+                	
+                </p>
+            </div>
+            <div style="padding-bottom: 10px;">
+                <p>
+                	
+                    	Lille,&nbsp;1838
+                		-
+                    	Paris,&nbsp;1917
+                	
+                </p>
+            </div>
+    	
+
+        <div style="border-left: 6px solid #6b4148; padding-left: 10px;">
+        	
+                <p style="font-size: 16px;">
+                	母と子（フェドー夫人と子供たち）
+                </p>
+        	
+        	
+                <p style="font-style: italic;">
+                	Mother and Children (Madame Feydeau and Her Children)
+                </p>
+        	
+        </div>
+        <div style="height: 20px;">
+        </div>
+        
+            <div style="width: 120px; float: left; border-top: 1px solid #adadad; padding-top: 5px;
+                color: #6b4148;">
+                <p>
+                    制作年
+                </p>
+            </div>
+            <div style="width: 170px; float: left; border-top: 1px solid #adadad; padding-bottom: 5px;
+                padding-top: 5px;">
+                <p>
+                    1897年
+                </p>
+            </div>
+        
+        
+            <div style="width: 120px; float: left; border-top: 1px solid #adadad; padding-top: 5px;
+                color: #6b4148;">
+                <p>
+                    材質・技法・形状</p>
+            </div>
+            <div style="width: 170px; float: left; border-top: 1px solid #adadad; padding-bottom: 5px;
+                padding-top: 5px;">
+                <p>
+                    油彩、カンヴァス
+                </p>
+            </div>
+        
+        
+        
+            <div style="width: 120px; float: left; border-top: 1px solid #adadad; padding-top: 5px;
+                color: #6b4148;">
+                <p>
+                    寸法（cm）</p>
+            </div>
+            <div style="width: 170px; float: left; border-top: 1px solid #adadad; padding-bottom: 5px;
+                padding-top: 5px;">
+                <p>
+                    190.5 x 127.8
+                </p>
+            </div>
+        
+        
+        
+            <div style="width: 120px; float: left; border-top: 1px solid #adadad; padding-top: 5px;
+                color: #6b4148;">
+                <p>
+                    署名・年記</p>
+            </div>
+            <div style="width: 170px; float: left; border-top: 1px solid #adadad; padding-bottom: 5px;
+                padding-top: 5px;">
+                <p>
+                    右下に署名、年記: Carolus-Duran / Paris. 1897.
+                </p>
+            </div>
+        
+        
+            <div style="width: 120px; float: left; border-top: 1px solid #adadad; padding-top: 5px;
+                color: #6b4148;">
+                <p>
+                    所蔵経緯</p>
+            </div>
+            <div style="width: 170px; float: left; border-top: 1px solid #adadad; padding-bottom: 5px;
+                padding-top: 5px;">
+                <p>
+                    松方コレクション
+                </p>
+            </div>
+        
+        
+        
+            <div style="width: 120px; float: left; border-top: 1px solid #adadad; padding-top: 5px;
+                color: #6b4148;">
+                <p>
+                    分類</p>
+            </div>
+            <div style="width: 170px; float: left; border-top: 1px solid #adadad; padding-bottom: 5px;
+                padding-top: 5px;">
+                <p>
+                    絵画
+                </p>
+            </div>
+        
+        
+            <div style="width: 120px; float: left; border-top: 1px solid #adadad; padding-top: 5px;
+                color: #6b4148;">
+                <p>
+                    所蔵番号</p>
+            </div>
+            <div style="width: 170px; float: left; border-top: 1px solid #adadad; padding-bottom: 5px;
+                padding-top: 5px;">
+                <p>
+                    P.1959-0091
+                </p>
+            </div>
+        
+    </div>
+    <!--[C]のブロックおわり-->
+    
+        <div style="clear: both; width: 570px; padding-top: 20px; padding-bottom: 10px;">
+            <p>
+                 この作品は、カロリュス=デュランの娘とその子供たちを描いている。彼女は、演劇作家として、また印象派やナビ派の作品の収集家として名を残しているジョルジュ・フェドーの夫人であった。対象の質感を手にとるように描き出す伝統的なアカデミックな技法と、印象派の人々が多用した即興的な筆の運びとの折衷が眼を惹く本作品は、世紀末の公的な展覧会に出品され、一般公衆の人気を集めていたいわゆる「サロン絵画」の典型的作例の一つである。印象派がすでに画壇の一角を占める勢力となり、その反動としてのさまざまな傾向が顕著であったこの時期、美術界の主流であるサロン画家たちの多くは、印象派の様式を部分的に摂取しては、アカデミスムとの折衷を試みていたのだった。着飾った母と子の姿を三角形の構図の中に収めた画面は、物質的な恵みを享受する当時のブルジョア層が理想とした家庭的幸福の情景の一つを今に伝えている。フェドー夫人の黒い服と胸元の赤い花、女児の白い服と手にもつ淡黄色の花など簡潔な色彩の対照は、カロリュス=デュラン独自のものであろう。ことに、19世紀フランス美術に少なからぬ影響を与えたスペイン趣味に由来する黒は画家のもっとも好んだ色の一つであり、彼の親しい友人であったマネもまた、黒のもたらす効果を愛したことはよく知られている。（出典: 国立西洋美術館名作選. 東京, 国立西洋美術館, 2006. cat. no. 99）
+            </p>
+        </div>
+    
+    
+        <div style="clear: both; width: 570px; border-top: 1px solid #adadad; padding-top: 5px;
+            padding-bottom: 10px;">
+            <p style="color: #92483f">
+                来歴</p>
+            <div style="width: 570px; padding-top: 10px;">
+                <p>
+                松方幸次郎氏購入; 1959年フランス政府より寄贈返還
+            </p>
+            </div>
+        </div>
+    
+    
+    <div style="clear: both; width: 570px; border-top: 1px solid #adadad; padding-top: 5px;
+        padding-bottom: 10px;">
+        <p style="color: #92483f">
+            展覧会歴</p>
+        <div style="width: 570px; padding-top: 10px;">
+          <p>
+            <table>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1960</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      松方コレクション名作選抜展,&nbsp;国立西洋美術館,&nbsp;1960年5月14日-1960年7月10日,&nbsp;cat. no. 36
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1962</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;白鶴美術館, 神戸,&nbsp;1962年10月20日-1962年11月5日,&nbsp;P-138
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1962</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;愛知県文化会館美術館, 名古屋,&nbsp;1962年11月17日-1962年12月9日,&nbsp;cat. no. 21 (当館記録による）
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1963</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;島根県立博物館, 松江,&nbsp;1963年10月5日-1963年10月20日,&nbsp;P-138
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1963</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;石橋美術館, 久留米,&nbsp;1963年10月26日-1963年11月10日,&nbsp;P-138
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1964</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;道立札幌中島スポーツセンター,&nbsp;1964年8月22日-1964年9月13日,&nbsp;cat. no. 39
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1965</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;石川県美術館, 金沢,&nbsp;1965年9月22日-1965年10月10日,&nbsp;cat. no. 37
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1965</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;岡山県総合文化センター, 岡山,&nbsp;1965年10月20日-1965年11月7日,&nbsp;cat. no. 37
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1966</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;和歌山県立美術館, 和歌山,&nbsp;1966年10月15日-1966年11月4日,&nbsp;cat. no. 33
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1966</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;大分文化会館, 大分,&nbsp;1966年11月12日-1966年11月27日,&nbsp;cat. no. 33
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1967</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;鹿児島市立美術館,&nbsp;1967年4月28日-1967年5月21日,&nbsp;cat. no. 33
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1968</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;新潟県美術博物館, 新潟,&nbsp;1968年7月14日-1968年8月4日,&nbsp;cat. no. 41
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1968</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;広島県立美術館, 広島,&nbsp;1968年10月26日-1968年11月17日,&nbsp;cat. no. 41
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1969</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;茨城県立県民文化センター, 水戸,&nbsp;1969年11月22日-1969年12月21日,&nbsp;cat. no. 39
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1970</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;長崎県立美術博物館, 長崎,&nbsp;1970年10月18日-1970年11月15日,&nbsp;cat. no. 7
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1971</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;富山県民会館美術館, 富山,&nbsp;1971年10月2日-1971年10月24日,&nbsp;cat. no. 7
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1972</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;長野県信濃美術館, 長野,&nbsp;1972年10月12日-1972年11月5日,&nbsp;cat. no. 7
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1973</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;高知県立郷土文化会館, 高知,&nbsp;1973年10月28日-1973年11月25日,&nbsp;cat. no. 6
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1974</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;福岡県文化会館, 福岡,&nbsp;1974年10月13日-1974年11月10日,&nbsp;cat. no. 6
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1974</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;佐賀県立博物館, 佐賀,&nbsp;1974年11月16日-1974年12月1日,&nbsp;cat. no. 6
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1975</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;山形美術博物館, 山形,&nbsp;1975年11月1日-1975年11月30日,&nbsp;cat. no. 6
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1976</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;鳥取県立博物館, 鳥取,&nbsp;1976年10月9日-1976年11月7日,&nbsp;cat. no. 41
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1977</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 国立西洋美術館所蔵　松方コレクション展,&nbsp;奈良県立美術館, 奈良,&nbsp;1977年10月15日-1977年11月13日,&nbsp;cat. no. 41
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1978</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      [巡回展] 松方コレクションを中心とした国立西洋美術館名品展,&nbsp;大分県立芸術会館, 大分,&nbsp;1978年12月20日-1979年1月31日,&nbsp;cat. no. 40
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1983</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      日本近代洋画の巨匠とフランス：ラファエル・コラン、ジャン=ポール・ローランスと日本の弟子たち,&nbsp;ブリヂストン美術館,&nbsp;1983年9月15日-1983年10月23日,&nbsp;三重県立美術館, 1983年10月29日-11月23日; 愛媛県立美術館, 1983年11月29日-12月25日; 長崎県立美術博物館, 1984年1月7日-29日cat. no. 136, col. repr. 
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1986</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      近代日本の洋画と西洋：模倣と創造の一世紀,&nbsp;静岡県立美術館,&nbsp;1986年8月15日-1986年9月26日
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1989</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      松方コレクション展：いま甦る夢の美術館―神戸市制100周年記念特別展,&nbsp;神戸市立博物館,&nbsp;1989年9月14日-1989年11月26日,&nbsp;cat. no. 32, col. repr.
+                    </font>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td valign="top">
+                    <font size="2">1997</font>
+                  </td>
+                  <td>
+                    <font size="2">
+                      素材と表現：国立西洋美術館所蔵作品を中心に,&nbsp;国立国際美術館, 吹田,&nbsp;1997年4月19日-1997年6月22日,&nbsp;cat. no. 21
+                    </font>
+                  </td>
+                </tr>
+              
+            </table>
+          </p>
+        </div>
+    </div>
+    
+    
+    <div style="clear: both; width: 570px; border-top: 1px solid #adadad; border-bottom: 1px solid #adadad;
+        padding-top: 5px; padding-bottom: 10px;">
+        <p style="color: #92483f">
+            文献歴</p>
+        <div style="width: 570px; padding-top: 10px;">
+            <p>
+              <table>
+                
+                  <tr>
+                    <td valign="top">
+                      <font size="2">1961</font>
+                    </td>
+                    <td>
+                      <font size="2">国立西洋美術館総目録. 東京, 国立西洋美術館, 1961,&nbsp;P-138.</font>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td valign="top">
+                      <font size="2">1979</font>
+                    </td>
+                    <td>
+                      <font size="2">国立西洋美術館総目録: 絵画篇. 東京, 国立西洋美術館, 1979,&nbsp;no. 34, repr.</font>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td valign="top">
+                      <font size="2">1990</font>
+                    </td>
+                    <td>
+                      <font size="2">神戸市立博物館編. 松方コレクション西洋美術総目録. 神戸, 「松方コレクション展」実行委員会, 1990,&nbsp;cat. no. 347.</font>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td valign="top">
+                      <font size="2">2013</font>
+                    </td>
+                    <td>
+                      <font size="2">国立西洋美術館名作選. 東京, 西洋美術振興財団, 2013,&nbsp;no. 102, col. repr.</font>
+                    </td>
+                  </tr>
+                
+              </table>
+            </p>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+
+
+
+<div id="side">
+    <ul>
+        <li>
+			<a href="/artizeweb/search_5_area.do"><img src="../artize/img/sidemenu_03_04_on.gif" alt="常設展" width="150" height="31"/></a>
+        </li>
+        <li>
+			<a href="http://www.nmwa.go.jp/jp/collection/introduction.html"><img src="../artize/img/sidemenu_03_01.gif" alt="作品紹介" width="150" height="31"class="rollover" /></a>
+        </li>
+        <li>
+			<a href="/artizeweb/search_1_top.do"><img src="../artize/img/sidemenu_03_02.gif" alt="作品検索" class="rollover" /></a>
+        </li>
+        <li>
+			<a href="http://www.nmwa.go.jp/jp/collection/index.html"><img src="../artize/img/sidemenu_03_05.gif" alt="総索引" class="rollover" /></a>
+        </li>
+    </ul>
+</div>
+
+
+				<!-- The requested resource (/artizeweb/pages/side) is not available -->
+            </div>
+        </div>
+        <hr />
+        <div id="footer">
+			
+
+
+
+<ul>
+    <!-- li class="item01"><a href="index.html">取材・広報</a></li>
+	<li class="item02"><a href=""#>作品画像の利用について</a></li -->
+    <li class="item03"><a href="http://www.nmwa.go.jp/jp/information/jobs.html">採用情報</a></li>
+    <li class="item04"><a href="http://www.artmuseums.go.jp/index.html" class="blank">独立行政法人国立美術館</a></li>
+    <li class="item05"><a href="http://www.nmwa.go.jp/jp/information/privacy.html">著作権とサイトポリシー</a></li>
+    <li class="item06"><a href="http://www.nmwa.go.jp/i-mode/">携帯サイトのご案内</a></li>
+</ul>
+<p>&copy;2011 独立行政法人国立美術館国立西洋美術館</p>
+
+        </div>
+    </div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12191875-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
